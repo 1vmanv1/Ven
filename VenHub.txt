@@ -1,0 +1,456 @@
+if game.PlaceId == 537413528 then
+-- Gui to Lua
+-- Version 3.2
+
+-- Instances
+
+local ScreenGui = Instance.new(ScreenGui)
+local Main = Instance.new(Frame)
+local Unlimited = Instance.new(TextButton)
+local Frame = Instance.new(Frame)
+local TextLabel = Instance.new(TextLabel)
+local Exit = Instance.new(TextButton)
+local HighJump = Instance.new(TextButton)
+local FastWalk = Instance.new(TextButton)
+
+--Properties
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = Main
+Main.Parent = ScreenGui
+Main.Active = true
+Main.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.769712448, 0, 0.034155596, 0)
+Main.Size = UDim2.new(0, 246, 0, 198)
+Main.Draggable = true
+
+Unlimited.Name = Unlimited
+Unlimited.Parent = Main
+Unlimited.BackgroundColor3 = Color3.fromRGB(170, 255, 255)
+Unlimited.BorderSizePixel = 0
+Unlimited.Position = UDim2.new(0.350868553, 0, 0.297088563, 0)
+Unlimited.Size = UDim2.new(0, 66, 0, 46)
+Unlimited.Font = Enum.Font.SourceSansBold
+Unlimited.Text = Unlimited Blocks
+Unlimited.TextColor3 = Color3.fromRGB(0, 0, 0)
+Unlimited.TextScaled = true
+Unlimited.TextSize = 14.000
+Unlimited.TextWrapped = true
+Unlimited.MouseButton1Downconnect(function()
+	for i,v in pairs(gameGetService(Players).LocalPlayer.PlayerGui.BuildGui.InventoryFrame.ScrollingFrame.BlocksFrameGetChildren()) do
+		if vFindFirstChild(AmountText) then
+			v.AmountText.Text = 99999999999999
+			v.AmountText.ChangedConnect(function()
+				v.AmountText.Text = 99999999999999
+			end)
+		end
+	end
+end)
+
+Frame.Parent = Main
+Frame.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Frame.BorderSizePixel = 0
+Frame.Size = UDim2.new(0, 246, 0, 40)
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0769119859, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 201, 0, 40)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = Ven Hub - Build A Boat
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Exit.Name = Exit
+Exit.Parent = Main
+Exit.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0.896263063, 0, 0, 0)
+Exit.Size = UDim2.new(0, 25, 0, 40)
+Exit.Font = Enum.Font.SourceSansBold
+Exit.Text = X
+Exit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exit.TextScaled = true
+Exit.TextSize = 14.000
+Exit.TextWrapped = true
+Exit.MouseButton1Downconnect(function()
+	Main.Visible = false
+end)
+
+HighJump.Name = High Jump
+HighJump.Parent = Main
+HighJump.BackgroundColor3 = Color3.fromRGB(170, 255, 255)
+HighJump.BorderSizePixel = 0
+HighJump.Position = UDim2.new(0.529386461, 0, 0.605169415, 0)
+HighJump.Size = UDim2.new(0, 66, 0, 46)
+HighJump.Font = Enum.Font.SourceSansBold
+HighJump.Text = High Jump
+HighJump.TextColor3 = Color3.fromRGB(0, 0, 0)
+HighJump.TextScaled = true
+HighJump.TextSize = 14.000
+HighJump.TextWrapped = true
+HighJump.MouseButton1Downconnect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end)
+
+FastWalk.Name = Fast Walk
+FastWalk.Parent = Main
+FastWalk.BackgroundColor3 = Color3.fromRGB(170, 255, 255)
+FastWalk.BorderSizePixel = 0
+FastWalk.Position = UDim2.new(0.167941719, 0, 0.605169415, 0)
+FastWalk.Size = UDim2.new(0, 66, 0, 46)
+FastWalk.Font = Enum.Font.SourceSansBold
+FastWalk.Text = Fast Walk
+FastWalk.TextColor3 = Color3.fromRGB(0, 0, 0)
+FastWalk.TextScaled = true
+FastWalk.TextSize = 14.000
+FastWalk.TextWrapped = true
+FastWalk.MouseButton1Downconnect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+end)
+end
+
+if game.PlaceId == 286090429 then
+-- Gui to Lua
+-- Version 3.2
+
+-- Instances
+
+local ScreenGui = Instance.new(ScreenGui)
+local Main = Instance.new(Frame)
+local SilentAim = Instance.new(TextButton)
+local ESP = Instance.new(TextButton)
+local RainbowGun = Instance.new(TextButton)
+local Frame = Instance.new(Frame)
+local TextLabel = Instance.new(TextLabel)
+local Exit = Instance.new(TextButton)
+
+--Properties
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = Main
+Main.Parent = ScreenGui
+Main.Active = true
+Main.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.0179840364, 0, 0.645161271, 0)
+Main.Size = UDim2.new(0, 279, 0, 170)
+Main.Draggable = true
+
+SilentAim.Name = Silent Aim
+SilentAim.Parent = Main
+SilentAim.BackgroundColor3 = Color3.fromRGB(170, 255, 255)
+SilentAim.BorderSizePixel = 0
+SilentAim.Position = UDim2.new(0.0394265205, 0, 0.529411793, 0)
+SilentAim.Size = UDim2.new(0, 66, 0, 46)
+SilentAim.Font = Enum.Font.SourceSansBold
+SilentAim.Text = Silent Aim
+SilentAim.TextColor3 = Color3.fromRGB(0, 0, 0)
+SilentAim.TextScaled = true
+SilentAim.TextSize = 14.000
+SilentAim.TextWrapped = true
+SilentAim.MouseButton1Downconnect(function()
+loadstring(gameHttpGet((httpspastebin.comrawgzVjTuri), true))()	
+end)	
+
+ESP.Name = ESP
+ESP.Parent = Main
+ESP.BackgroundColor3 = Color3.fromRGB(170, 255, 255)
+ESP.BorderSizePixel = 0
+ESP.Position = UDim2.new(0.375420332, 0, 0.529411793, 0)
+ESP.Size = UDim2.new(0, 66, 0, 46)
+ESP.Font = Enum.Font.SourceSansBold
+ESP.Text = Esp
+ESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+ESP.TextScaled = true
+ESP.TextSize = 14.000
+ESP.TextWrapped = true
+ESP.MouseButton1Downconnect(function()
+loadstring(gameHttpGet(('httpspastebin.comrawgwN6fn2v'),true))()
+end)	
+
+RainbowGun.Name = Rainbow Gun
+RainbowGun.Parent = Main
+RainbowGun.BackgroundColor3 = Color3.fromRGB(170, 255, 255)
+RainbowGun.BorderSizePixel = 0
+RainbowGun.Position = UDim2.new(0.722739935, 0, 0.529411793, 0)
+RainbowGun.Size = UDim2.new(0, 66, 0, 46)
+RainbowGun.Font = Enum.Font.SourceSansBold
+RainbowGun.Text = Rainbow Gun
+RainbowGun.TextColor3 = Color3.fromRGB(0, 0, 0)
+RainbowGun.TextScaled = true
+RainbowGun.TextSize = 14.000
+RainbowGun.TextWrapped = true
+RainbowGun.MouseButton1Downconnect(function()
+loadstring(gameHttpGet((httpspastebin.comrawKuC4d71q), true))()	
+end)
+
+Frame.Parent = Main
+Frame.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Frame.BorderSizePixel = 0
+Frame.Size = UDim2.new(0, 279, 0, 40)
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.103942655, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 201, 0, 40)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = Ven Hub - Arsenal
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Exit.Name = Exit
+Exit.Parent = Main
+Exit.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0.878136158, 0, 0, 0)
+Exit.Size = UDim2.new(0, 34, 0, 40)
+Exit.Font = Enum.Font.SourceSansBold
+Exit.Text = X
+Exit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exit.TextScaled = true
+Exit.TextSize = 14.000
+Exit.TextWrapped = true
+Exit.MouseButton1Downconnect(function()
+Main.Visible = false
+end)
+end
+
+if game.PlaceId == 155615604 then
+-- Gui to Lua
+-- Version 3.2
+
+-- Instances
+
+local ScreenGui = Instance.new(ScreenGui)
+local Main = Instance.new(Frame)
+local ESP = Instance.new(TextButton)
+local Getgun = Instance.new(TextButton)
+local Frame = Instance.new(Frame)
+local TextLabel = Instance.new(TextLabel)
+local Exit = Instance.new(TextButton)
+local Killall = Instance.new(TextButton)
+local HighJump = Instance.new(TextButton)
+local FastWalk = Instance.new(TextButton)
+local Gunmod = Instance.new(TextButton)
+
+--Properties
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = Main
+Main.Parent = ScreenGui
+Main.Active = true
+Main.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.719932079, 0, 0.0322580636, 0)
+Main.Size = UDim2.new(0, 331, 0, 198)
+Main.Draggable = true
+
+ESP.Name = ESP
+ESP.Parent = Main
+ESP.BackgroundColor3 = Color3.fromRGB(170, 255, 255)
+ESP.BorderSizePixel = 0
+ESP.Position = UDim2.new(0.112580448, 0, 0.292038053, 0)
+ESP.Size = UDim2.new(0, 66, 0, 46)
+ESP.Font = Enum.Font.SourceSansBold
+ESP.Text = Esp
+ESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+ESP.TextScaled = true
+ESP.TextSize = 14.000
+ESP.TextWrapped = true
+ESP.MouseButton1Downconnect(function()
+	loadstring(gameHttpGet(('httpspastebin.comrawgwN6fn2v'),true))()
+end)
+
+Getgun.Name = Get gun
+Getgun.Parent = Main
+Getgun.BackgroundColor3 = Color3.fromRGB(170, 255, 255)
+Getgun.BorderSizePixel = 0
+Getgun.Position = UDim2.new(0.372286767, 0, 0.292038053, 0)
+Getgun.Size = UDim2.new(0, 66, 0, 46)
+Getgun.Font = Enum.Font.SourceSansBold
+Getgun.Text = Get Guns
+Getgun.TextColor3 = Color3.fromRGB(0, 0, 0)
+Getgun.TextScaled = true
+Getgun.TextSize = 14.000
+Getgun.TextWrapped = true
+Getgun.MouseButton1Downconnect(function()
+	for i,v in pairs(Workspace.Prison_ITEMS.giverGetChildren()) do
+
+		lol = Workspace.Remote.ItemHandlerInvokeServer(v.ITEMPICKUP)
+		print(lol)
+	end
+end)
+
+Frame.Parent = Main
+Frame.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Frame.BorderSizePixel = 0
+Frame.Size = UDim2.new(0, 331, 0, 40)
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.170407921, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 201, 0, 40)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = Ven Hub - Prison Life
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Exit.Name = Exit
+Exit.Parent = Main
+Exit.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0.896263063, 0, 0, 0)
+Exit.Size = UDim2.new(0, 34, 0, 40)
+Exit.Font = Enum.Font.SourceSansBold
+Exit.Text = X
+Exit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exit.TextScaled = true
+Exit.TextSize = 14.000
+Exit.TextWrapped = true
+Exit.MouseButton1Downconnect(function()
+Main.Visible = false
+end)
+
+Killall.Name = Kill all
+Killall.Parent = Main
+Killall.BackgroundColor3 = Color3.fromRGB(170, 255, 255)
+Killall.BorderSizePixel = 0
+Killall.Position = UDim2.new(0.632105529, 0, 0.292038053, 0)
+Killall.Size = UDim2.new(0, 66, 0, 46)
+Killall.Font = Enum.Font.SourceSansBold
+Killall.Text = Kill All
+Killall.TextColor3 = Color3.fromRGB(0, 0, 0)
+Killall.TextScaled = true
+Killall.TextSize = 14.000
+Killall.TextWrapped = true
+Killall.MouseButton1Downconnect(function()
+	workspace.Remote.TeamEventFireServer(Medium stone grey)
+
+	game.Workspace.Remote.ItemHandlerInvokeServer(workspace.Prison_ITEMS.giver[Remington 870].ITEMPICKUP) 
+
+	wait(0.5)
+	function kill(a)
+		local A_1 =
+			{
+				[1] =
+				{
+					[RayObject] = Ray.new(Vector3.new(845.555908, 101.429337, 2269.43945), Vector3.new(-391.152252, 8.65560055, -83.2166901)),
+					[Distance] = 3.2524313926697,
+					[Cframe] = CFrame.new(840.310791, 101.334137, 2267.87988, 0.0636406094, 0.151434347, -0.986416459, 0, 0.988420188, 0.151741937, 0.997972965, -0.00965694897, 0.0629036576),
+					[Hit] = a.Character.Head
+				},
+				[2] =
+				{
+					[RayObject] = Ray.new(Vector3.new(845.555908, 101.429337, 2269.43945), Vector3.new(-392.481476, -8.44939327, -76.7261353)),
+					[Distance] = 3.2699294090271,
+					[Cframe] = CFrame.new(840.290466, 101.184189, 2267.93506, 0.0964837447, 0.0589403138, -0.993587971, 4.65661287e-10, 0.998245299, 0.0592165813, 0.995334625, -0.00571343815, 0.0963144377),
+					[Hit] = a.Character.Head
+				},
+				[3] =
+				{
+					[RayObject] = Ray.new(Vector3.new(845.555908, 101.429337, 2269.43945), Vector3.new(-389.21701, -2.50536323, -92.2163162)),
+					[Distance] = 3.1665518283844,
+					[Cframe] = CFrame.new(840.338867, 101.236496, 2267.80371, 0.0166504811, 0.0941716284, -0.995416701, 1.16415322e-10, 0.995554805, 0.0941846818, 0.999861419, -0.00156822044, 0.0165764652),
+					[Hit] = a.Character.Head
+				},
+				[4] =
+				{
+					[RayObject] = Ray.new(Vector3.new(845.555908, 101.429337, 2269.43945), Vector3.new(-393.353973, 3.13988972, -72.5452042)),
+					[Distance] = 3.3218522071838,
+					[Cframe] = CFrame.new(840.277222, 101.285957, 2267.9707, 0.117109694, 0.118740402, -0.985994935, -1.86264515e-09, 0.992826641, 0.119563118, 0.993119001, -0.0140019981, 0.116269611),
+					[Hit] = a.Character.Head
+				},
+				[5] =
+				{
+					[RayObject] = Ray.new(Vector3.new(845.555908, 101.429337, 2269.43945), Vector3.new(-390.73172, 3.2097764, -85.5477524)),
+					[Distance] = 3.222757101059,
+					[Cframe] = CFrame.new(840.317993, 101.286423, 2267.86035, 0.0517584644, 0.123365127, -0.991010666, 0, 0.992340803, 0.123530701, 0.99865967, -0.00639375951, 0.0513620302),
+					[Hit] = a.Character.Head
+				}
+			}
+		local A_2 = game.Players.LocalPlayer.Backpack[Remington 870]
+		local Event = gameGetService(ReplicatedStorage).ShootEvent
+		EventFireServer(A_1, A_2)
+		EventFireServer(A_1, A_2)
+	end
+
+	for i,v in pairs(game.PlayersGetChildren())do
+		if v.Name ~= game.Players.LocalPlayer.Name then
+			kill(v)
+		end
+	end
+	wait(1)
+	workspace.Remote.TeamEventFireServer(Bright orange)
+
+end)
+
+HighJump.Name = High Jump
+HighJump.Parent = Main
+HighJump.BackgroundColor3 = Color3.fromRGB(170, 255, 255)
+HighJump.BorderSizePixel = 0
+HighJump.Position = UDim2.new(0.632105529, 0, 0.584967375, 0)
+HighJump.Size = UDim2.new(0, 66, 0, 46)
+HighJump.Font = Enum.Font.SourceSansBold
+HighJump.Text = High Jump
+HighJump.TextColor3 = Color3.fromRGB(0, 0, 0)
+HighJump.TextScaled = true
+HighJump.TextSize = 14.000
+HighJump.TextWrapped = true
+HighJump.MouseButton1Downconnect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 75
+end)
+
+FastWalk.Name = Fast Walk
+FastWalk.Parent = Main
+FastWalk.BackgroundColor3 = Color3.fromRGB(170, 255, 255)
+FastWalk.BorderSizePixel = 0
+FastWalk.Position = UDim2.new(0.372286767, 0, 0.584967375, 0)
+FastWalk.Size = UDim2.new(0, 66, 0, 46)
+FastWalk.Font = Enum.Font.SourceSansBold
+FastWalk.Text = Fast Walk
+FastWalk.TextColor3 = Color3.fromRGB(0, 0, 0)
+FastWalk.TextScaled = true
+FastWalk.TextSize = 14.000
+FastWalk.TextWrapped = true
+FastWalk.MouseButton1Downconnect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+end)
+
+Gunmod.Name = Gun mod
+Gunmod.Parent = Main
+Gunmod.BackgroundColor3 = Color3.fromRGB(170, 255, 255)
+Gunmod.BorderSizePixel = 0
+Gunmod.Position = UDim2.new(0.112580448, 0, 0.584967375, 0)
+Gunmod.Size = UDim2.new(0, 66, 0, 46)
+Gunmod.Font = Enum.Font.SourceSansBold
+Gunmod.Text = Mod Gun (Equip a Gun)
+Gunmod.TextColor3 = Color3.fromRGB(0, 0, 0)
+Gunmod.TextScaled = true
+Gunmod.TextSize = 14.000
+Gunmod.TextWrapped = true
+Gunmod.MouseButton1Downconnect(function()
+	local m = require(gameGetService('Players').LocalPlayer.CharacterFindFirstChildOfClass(Tool).GunStates)
+	m.Damage = 100
+	m.MaxAmmo = math.huge
+	m.CurrentAmmo = math.huge
+	m.AutoFire = true
+	m.FireRate = 0
+end)
+end
